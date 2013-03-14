@@ -491,8 +491,9 @@ would happen if the current value happened to be `false`.)
 * Avoid methods longer than 10 LOC (lines of code). Ideally, most methods will be shorter than
   5 LOC. Empty lines do not contribute to the relevant LOC.
 * Avoid parameter lists longer than three or four parameters.
-* Code in a functional way, avoiding mutation when that makes sense.
-* Avoid needless metaprogramming.
+* Code in a [functional](http://eloquentjavascript.net/chapter6.html) way, avoiding mutation when that makes sense.
+* Avoid needless metaprogramming--"needless" is a slippery term, so I'd say make sure your metaprogramming is done in the vein of creating _less_ work and code that is _easier_ to understand.  It is easy to let metaprogramming get very complex just for the fun of it--
+  [KISS](http://en.wikipedia.org/wiki/KISS_principle)
 * Do not mutate arguments unless that is the purpose of the method.
 * Avoid more than three levels of block nesting.
 * Be consistent. In an ideal world, be consistent with these guidelines.
